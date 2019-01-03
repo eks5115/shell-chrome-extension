@@ -5,6 +5,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 
     port.onMessage.addListener((data) => {
       console.debug('command result: %o', data);
+      port.disconnect();
       sendResponse(data);
     });
 
