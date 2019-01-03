@@ -15,9 +15,8 @@ commitElement.onclick = function() {
 };
 
 commandElement.onkeydown = (event) => {
-  switch(event.code){
-    case 'Enter':
-      commitElement.dispatchEvent(new MouseEvent('click'));
-      break;
+  if (event.code === 'Enter' && !commandElement.value.endsWith('\\')) {
+    event.preventDefault();
+    commitElement.dispatchEvent(new MouseEvent('click'));
   }
 };
