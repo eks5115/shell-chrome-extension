@@ -10,8 +10,12 @@
     "dev": "webpack --config webpack.dev.js",
     "prod": "webpack --config webpack.prod.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "eks5115",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eks5115/shell-chrome-extension.git"
+  },
   "devDependencies": {
     "copy-webpack-plugin": "^4.6.0",
     "file-loader": "^3.0.1",
